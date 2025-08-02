@@ -24,7 +24,7 @@ def search_songs(query, max_results=10):
     )
     response = requests.get(url)
     return response.json().get("items", [])
-
+#################
 # ----------- Streamlit App UI -----------
 st.set_page_config(page_title="🎵 Songs Finder", layout="wide")
 st.title("🎵 Latest Trending & Search Songs")
